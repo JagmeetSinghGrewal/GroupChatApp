@@ -20,6 +20,8 @@ public class MainServer {
 			print("Error: Problem in setting up socket server");
 			print(e.getLocalizedMessage());
 		} catch (Exception e) {
+			print("Error: ");
+			print(e.getLocalizedMessage());
 		}
 	}
 	
