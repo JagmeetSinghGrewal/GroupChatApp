@@ -1,5 +1,6 @@
 package Server;
 
+import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -15,9 +16,10 @@ public class MainServer {
 				Socket so = s.accept();
 				print("A client has connected");
 			}
-		} catch (Exception e) {
-			print("Error in settings up server socket");
+		} catch (IOException e) {
+			print("Error: Problem in setting up socket server");
 			print(e.getLocalizedMessage());
+		} catch (Exception e) {
 		}
 	}
 	
