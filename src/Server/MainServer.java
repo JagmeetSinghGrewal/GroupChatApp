@@ -6,8 +6,7 @@ import java.net.Socket;
 
 public class MainServer {
 	private final static int PORT = 9999;
-	private final static Boolean DEBUG = false;
-	
+	private final static Boolean DEBUG = false;	
 	
 	public static void main(String[]  args) {
 		try {
