@@ -36,7 +36,4 @@ public class Person {
 	public String toString() {
 		return fName + " " + lName;
 	}
-	
-	
-	
 }
